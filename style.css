@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#prompt {
+    font-size: 2rem;
+    font-family: monospace;
+    text-align: center;
+    width: 80%; 
+    margin: auto;
+    line-height: 4.0rem;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 60px; /* Add some bottom margin */
+}
+
+button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+}
+
+.input-prompt {
+    /* Add any styles you want the divs to have */
+    white-space: pre-wrap;  /* This allows the text to wrap */
+    border-bottom: 3px dashed white;
+    color: yellow;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 2rem;
+	box-sizing: border-box;
+}
+
+.input-prompt:focus {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+
+button.enabled {
+    background-color: #4CAF50; /* Green */
+    color: white;
+	cursor: pointer; /* cursor will look like a pointer when hovering over an enabled button */
+}
+
+button.enabled:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: grey;
+    color: white;
+	cursor: not-allowed; /* cursor will look like a "not allowed" sign when hovering over a disabled button */
+}
+
+.input-prompt {
+    display: inline-block;  /* This makes the divs appear in line with the text */
+    min-width: 10ch;  /* This makes the divs start at around 10 characters wide */
+    white-space: pre-wrap;  /* This allows the text to wrap */
+    border-bottom: 3px dashed white;
+    color: yellow;
+	line-height: 1;
+    padding-bottom: 7px;
+    font-family: monospace;
+    font-size: 2rem;
+    background-color: transparent;  /* Make the background transparent */
+    outline: none;  /* Remove the default outline */
+}
+
+.input-prompt::-webkit-scrollbar {
+    display: none;
+}
