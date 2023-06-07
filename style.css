@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+  #prompt {
+    font-size: 1.5rem;
+    line-height: 3.0rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .input-prompt {
+    font-size: 1.5rem;
+  }
+}
+
 body {
     background-color: black;
     color: white;
@@ -43,13 +59,18 @@ button {
 }
 
 .input-prompt {
-    /* Add any styles you want the divs to have */
-    white-space: pre-wrap;  /* This allows the text to wrap */
+    display: inline-block;
+    min-width: 10ch;
+    white-space: pre-wrap;
     border-bottom: 3px dashed white;
     color: yellow;
-    padding: 5px;
+	line-height: 1;  /* try adjusting this */
+    padding: 5px 0;  /* adjust padding */
+    margin: 0;  /* add this line */
     font-family: monospace;
     font-size: 2rem;
+    background-color: transparent;
+    outline: none;
 	box-sizing: border-box;
 }
 
